@@ -43,7 +43,7 @@ public class Bullet : MonoBehaviour
                     Instantiate(floatingText, transform.position, Quaternion.identity);
                     enemy.flash(Color.red);
 
-                    //oof, ow, zing, ouch
+                    //ouch
                     handled = true;
                 }
                 else if (collision.collider.tag == "armoured")
@@ -57,7 +57,7 @@ public class Bullet : MonoBehaviour
                     Instantiate(floatingText, transform.position, Quaternion.identity);
                     enemy.flash(Color.yellow);
 
-                    //nope, meh, nah, 
+                    //nope
                     handled = true;
                 }
 
